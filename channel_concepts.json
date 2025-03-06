@@ -1,0 +1,155 @@
+{
+  "channels": [
+    {
+      "id": 1,
+      "name": "Vintage Cabin Retreats",
+      "music_genre": "Vintage Oldies",
+      "vibe": "Cabin Comforts",
+      "target_keywords": [
+        "vintage winter oldies playing in another room",
+        "cozy oldies",
+        "cabin comforts 1 hour no ads"
+      ],
+      "concept": "Classic oldies music playing softly as if from another room in a cozy cabin setting with crackling fireplace visuals."
+    },
+    {
+      "id": 2,
+      "name": "Tranquil Corner Jazz",
+      "music_genre": "Tender Piano Jazz",
+      "vibe": "Perfect Relaxing Corner",
+      "target_keywords": [
+        "tranquil jazz melodies",
+        "tender piano jazz",
+        "perfect relaxing corner 4 hours"
+      ],
+      "concept": "Soft, melodic jazz piano pieces paired with visuals of perfectly arranged reading nooks and relaxation corners."
+    },
+    {
+      "id": 3,
+      "name": "Atmospheric Radio Archives",
+      "music_genre": "Vintage Radio Broadcasts",
+      "vibe": "ASMR Radio Experience",
+      "target_keywords": [
+        "vintage radio",
+        "asmr radio announcer roleplay",
+        "asmr radio broadcast 5 hours"
+      ],
+      "concept": "Recreated vintage radio broadcasts with gentle static and ASMR-quality announcer voices between music tracks."
+    },
+    {
+      "id": 4,
+      "name": "Seasonal Lofi Rhythms",
+      "music_genre": "Lofi Hip Hop",
+      "vibe": "Monthly Seasonal Changes",
+      "target_keywords": [
+        "[Month] Vibes",
+        "March Playlist",
+        "seasonal lofi 10 hours no ads"
+      ],
+      "concept": "Lofi beats that capture the essence of each month's unique atmosphere, paired with seasonal visuals."
+    },
+    {
+      "id": 5,
+      "name": "Deep Focus Garage",
+      "music_genre": "Future Garage",
+      "vibe": "Focus Enhancing",
+      "target_keywords": [
+        "future garage",
+        "1 hour of deep concentration",
+        "focus enhancing 30Hz"
+      ],
+      "concept": "Future garage tracks with subtle 30Hz binaural beats undertones, paired with minimal, non-distracting study visuals."
+    },
+    {
+      "id": 6,
+      "name": "Whispered Beats Studio",
+      "music_genre": "Atmospheric Beats",
+      "vibe": "ASMR Lofi",
+      "target_keywords": [
+        "atmospheric beats",
+        "asmr lofi",
+        "whispered beats 4 hrs"
+      ],
+      "concept": "Atmospheric beats with occasional whispered vocals and ASMR-triggering sounds, paired with calming visual loops."
+    },
+    {
+      "id": 7,
+      "name": "Melodic Trap Sanctuaries",
+      "music_genre": "Melodic Trap/Drill",
+      "vibe": "Urban Relaxation Spaces",
+      "target_keywords": [
+        "melodic drill type beat",
+        "trapsoul type beat",
+        "urban sanctuary 1 hour"
+      ],
+      "concept": "Melodic trap instrumentals paired with stylish urban apartment or rooftop visuals."
+    },
+    {
+      "id": 8,
+      "name": "Accent Jazz Journeys",
+      "music_genre": "International Jazz Variations",
+      "vibe": "ASMR Accent Experiences",
+      "target_keywords": [
+        "tranquil jazz melodies",
+        "asmr accent",
+        "international jazz journey 5 hours"
+      ],
+      "concept": "Jazz music from different global traditions with occasional soft-spoken introductions in various accents."
+    },
+    {
+      "id": 9,
+      "name": "Winter Oldies Hearth",
+      "music_genre": "Winter-themed Oldies",
+      "vibe": "Cozy Fireplace Settings",
+      "target_keywords": [
+        "winter oldies",
+        "cozy fireplace",
+        "vintage winter music 10 hours no ads"
+      ],
+      "concept": "Winter-themed classic songs paired with cozy fireplace visuals and gentle snowfall animations."
+    },
+    {
+      "id": 10,
+      "name": "Culinary Lofi Bakery",
+      "music_genre": "Gentle Lofi",
+      "vibe": "ASMR Culinary Experiences",
+      "target_keywords": [
+        "trying asian fruit bread asmr",
+        "bakery lofi",
+        "culinary asmr 4 hours"
+      ],
+      "concept": "Soft lofi beats paired with visuals of bakeries, bread-making, and other culinary processes."
+    },
+    {
+      "id": 11,
+      "name": "Tender Night Melodies",
+      "music_genre": "Tender Piano Jazz",
+      "vibe": "Night-time Relaxation",
+      "target_keywords": [
+        "tender piano jazz",
+        "night melodies",
+        "sleep jazz 10 hours no ads"
+      ],
+      "concept": "Soft, slow jazz piano pieces perfect for nighttime relaxation, paired with starry night visuals or city lights."
+    },
+    {
+      "id": 12,
+      "name": "Atmospheric Nature Beats",
+      "music_genre": "Atmospheric Beats",
+      "vibe": "Natural Landscapes",
+      "target_keywords": [
+        "atmospheric beats",
+        "nature sounds",
+        "forest beats 5 hrs"
+      ],
+      "concept": "Atmospheric instrumental beats subtly mixed with nature sounds, paired with stunning natural landscape visuals."
+    }
+  ],
+  "implementation_strategy": {
+    "visual_identity": "Create consistent color schemes and visual styles for all videos within a channel",
+    "music_template": "Establish a signature sound that defines your channel while still allowing variety",
+    "title_duration": "Include specific durations in titles (1 hour, 4 hours, 10 hours)",
+    "longer_videos": "Add 'no ads' in longer video titles as a high-value search term",
+    "playlists": "Create playlists that group similar vibes within your channel niche"
+  }
+}
