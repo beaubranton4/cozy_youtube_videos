@@ -1,0 +1,5 @@
+-- Rename all channels and nail down theme and vibe
+-- See if we can auto generate music for these channels
+-- See if we can auto generate video for these channels
+-- See if there's a better way to edit these music and video clips
+-- What other parts of the process can be automated?
