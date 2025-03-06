@@ -1,0 +1,49 @@
+# Cursor Rules for cozy_youtube_videos
+
+# General behavior rules
+- Always prioritize code quality and maintainability over quick solutions
+- Follow PEP 8 style guidelines for Python code
+- Include comprehensive docstrings for all functions and classes
+- Add appropriate error handling for file operations and external processes
+- Ensure backward compatibility when modifying existing functions
+
+# Project-specific rules
+- Keep the modular structure of the project intact
+- Maintain separation between raw and production files
+- Respect the channel concept structure defined in channel_concepts.json
+- Don't modify the core workflow steps without explicit permission
+- Ensure all scripts have proper command-line interfaces with help text
+
+# File organization rules
+- New utility functions should go in scripts/utils/
+- New generation scripts should go in scripts/generation/
+- New video processing scripts should go in scripts/video/
+- Channel-specific code should never be hardcoded; always use the channel_concepts.json
+
+# Code generation rules
+- Always make scripts executable with proper shebang lines
+- Include imports at the top of the file
+- Group related functions together
+- Use consistent naming conventions:
+  - snake_case for functions and variables
+  - CamelCase for classes
+  - UPPER_CASE for constants
+- Add appropriate type hints where possible
+
+# Testing and validation
+- Suggest manual testing steps when adding new functionality
+- Validate user inputs before processing
+- Check for required dependencies before executing external commands
+- Provide clear error messages when operations fail
+
+# Documentation rules
+- Update README.md when adding new features
+- Keep PROJECT_GUIDE.md in sync with code changes
+- Document command-line arguments for all scripts
+- Include examples of how to use new functionality
+
+# Performance considerations
+- Be mindful of memory usage when processing large media files
+- Use efficient algorithms for file operations
+- Consider adding progress indicators for long-running operations
+- Implement proper cleanup of temporary files
