@@ -2,7 +2,8 @@
   "channels": [
     {
       "id": 1,
-      "name": "Vintage Cabin Retreats",
+      "name": "Cozy Cabin Oldies",
+      "youtube_handle": "@vintagecabinradio",
       "music_genre": "Vintage Oldies",
       "vibe": "Cabin Comforts",
       "target_keywords": [
@@ -14,19 +15,21 @@
     },
     {
       "id": 2,
-      "name": "Tranquil Corner Jazz",
+      "name": "Jewelry Store Jazz",
+      "youtube_handle": "@jewelrystorejazz",
       "music_genre": "Tender Piano Jazz",
-      "vibe": "Perfect Relaxing Corner",
+      "vibe": "Elegant & Luxurious Ambiance",
       "target_keywords": [
         "tranquil jazz melodies",
         "tender piano jazz",
         "perfect relaxing corner 4 hours"
       ],
-      "concept": "Soft, melodic jazz piano pieces paired with visuals of perfectly arranged reading nooks and relaxation corners."
+      "concept": "Smooth and elegant piano jazz playing in the background of a high-end jewelry store, creating a refined and luxurious ambiance with soft lighting and sparkling displays."
     },
     {
       "id": 3,
-      "name": "Atmospheric Radio Archives",
+      "name": "Retro Radio Archives",
+      "youtube_handle": "@midnightradiovibes",
       "music_genre": "Vintage Radio Broadcasts",
       "vibe": "ASMR Radio Experience",
       "target_keywords": [
@@ -39,110 +42,121 @@
     {
       "id": 4,
       "name": "Seasonal Lofi Rhythms",
+      "youtube_handle": "@lofiseasons",
       "music_genre": "Lofi Hip Hop",
       "vibe": "Monthly Seasonal Changes",
       "target_keywords": [
-        "[Month] Vibes",
-        "March Playlist",
+        "[Insert Current Month] Vibes",
+        "[Current Month] Playlist",
         "seasonal lofi 10 hours no ads"
       ],
       "concept": "Lofi beats that capture the essence of each month's unique atmosphere, paired with seasonal visuals."
     },
     {
       "id": 5,
-      "name": "Deep Focus Garage",
+      "name": "Deep Future Garage",
+      "youtube_handle": "@neonmindtapes",
       "music_genre": "Future Garage",
-      "vibe": "Focus Enhancing",
+      "vibe": "Immersive Soundscapes for Focus",
       "target_keywords": [
-        "future garage",
-        "1 hour of deep concentration",
-        "focus enhancing 30Hz"
+        "deep future garage",
+        "concentration beats 30Hz",
+        "focus music futuristic vibes",
+        "trap beats"
       ],
-      "concept": "Future garage tracks with subtle 30Hz binaural beats undertones, paired with minimal, non-distracting study visuals."
+      "concept": "Immersive Future Garage music with deep bass, atmospheric textures, and subtle binaural beats designed for focus and deep work."
     },
     {
       "id": 6,
-      "name": "Whispered Beats Studio",
-      "music_genre": "Atmospheric Beats",
-      "vibe": "ASMR Lofi",
+      "name": "Midnight Auto Beats",
+      "youtube_handle": "@midnightautowaves",
+      "music_genre": "Future Garage x Industrial Ambient",
+      "vibe": "Late Night Mechanic Shop",
       "target_keywords": [
-        "atmospheric beats",
-        "asmr lofi",
-        "whispered beats 4 hrs"
+        "future garage night drive",
+        "mechanic shop lofi",
+        "dark ambient garage beats"
       ],
-      "concept": "Atmospheric beats with occasional whispered vocals and ASMR-triggering sounds, paired with calming visual loops."
+      "concept": "Future garage and ambient electronic music blended with the immersive sounds of a late-night mechanic shop—clinking tools, distant chatter, and low hums of engines."
     },
     {
       "id": 7,
-      "name": "Melodic Trap Sanctuaries",
-      "music_genre": "Melodic Trap/Drill",
-      "vibe": "Urban Relaxation Spaces",
+      "name": "Camp Fire Radio",
+      "youtube_handle": "@mistyforestcamp",
+      "music_genre": "ASMR x Nature x Vintage Radio",
+      "vibe": "Campfire in a Foggy Forest",
       "target_keywords": [
-        "melodic drill type beat",
-        "trapsoul type beat",
-        "urban sanctuary 1 hour"
+        "campfire radio ASMR",
+        "forest camping sounds",
+        "cozy foggy woods retreat"
       ],
-      "concept": "Melodic trap instrumentals paired with stylish urban apartment or rooftop visuals."
+      "concept": "Soft-spoken vintage radio broadcasts layered with nature sounds—crackling campfires, distant owls, and the occasional rain—all set in a misty forest campsite."
     },
     {
       "id": 8,
-      "name": "Accent Jazz Journeys",
-      "music_genre": "International Jazz Variations",
-      "vibe": "ASMR Accent Experiences",
+      "name": "Anime Jazz Club",
+      "youtube_handle": "@animejazzclub",
+      "music_genre": "Smooth Jazz x Anime Soundtracks",
+      "vibe": "Retro Anime Lounge",
       "target_keywords": [
-        "tranquil jazz melodies",
-        "asmr accent",
-        "international jazz journey 5 hours"
+        "anime jazz playlist",
+        "lofi anime jazz",
+        "90s anime jazz vibes"
       ],
-      "concept": "Jazz music from different global traditions with occasional soft-spoken introductions in various accents."
+      "concept": "A blend of smooth jazz and iconic anime soundtrack pieces, paired with vintage anime-style visuals of cozy city cafés and rain-drenched streets."
     },
     {
       "id": 9,
-      "name": "Winter Oldies Hearth",
-      "music_genre": "Winter-themed Oldies",
-      "vibe": "Cozy Fireplace Settings",
+      "name": "Ethereal Space Beats",
+      "youtube_handle": "@etherealspacebeats",
+      "music_genre": "Atmospheric Space Beats",
+      "vibe": "Cinematic Cosmic Exploration",
       "target_keywords": [
-        "winter oldies",
-        "cozy fireplace",
-        "vintage winter music 10 hours no ads"
+        "space ambient music",
+        "ethereal cosmic beats",
+        "chill sci-fi synthwave"
       ],
-      "concept": "Winter-themed classic songs paired with cozy fireplace visuals and gentle snowfall animations."
+      "concept": "A blend of cinematic ambient beats and cosmic synthwave, creating a sense of deep-space exploration and interstellar mystery."
     },
     {
       "id": 10,
       "name": "Culinary Lofi Bakery",
+      "youtube_handle": "@lofibakery",
       "music_genre": "Gentle Lofi",
       "vibe": "ASMR Culinary Experiences",
       "target_keywords": [
         "trying asian fruit bread asmr",
         "bakery lofi",
-        "culinary asmr 4 hours"
+        "culinary asmr"
       ],
       "concept": "Soft lofi beats paired with visuals of bakeries, bread-making, and other culinary processes."
     },
     {
       "id": 11,
-      "name": "Tender Night Melodies",
-      "music_genre": "Tender Piano Jazz",
-      "vibe": "Night-time Relaxation",
+      "name": "Grand Library Archives",
+      "youtube_handle": "@grandlibraryradio",
+      "music_genre": "Vintage Radio x Classical Jazz",
+      "vibe": "Historic Library Ambiance",
       "target_keywords": [
-        "tender piano jazz",
-        "night melodies",
-        "sleep jazz 10 hours no ads"
+        "vintage radio jazz",
+        "cozy library ambiance",
+        "old archives music"
       ],
-      "concept": "Soft, slow jazz piano pieces perfect for nighttime relaxation, paired with starry night visuals or city lights."
+      "concept": "A mix of vintage radio broadcasts and classical jazz tunes, set in an old, candle-lit library where history and music intertwine."
     },
     {
       "id": 12,
-      "name": "Atmospheric Nature Beats",
-      "music_genre": "Atmospheric Beats",
-      "vibe": "Natural Landscapes",
+      "name": "Desert Lofi Mirage",
+      "youtube_handle": "@desertlofimirage",
+      "music_genre": "Lofi x Desert Ambience",
+      "vibe": "Vast Open Desert Soundscapes",
       "target_keywords": [
-        "atmospheric beats",
-        "nature sounds",
-        "forest beats 5 hrs"
+        "desert lofi beats",
+        "lofi mirage music",
+        "autonomous sensory meridian response",
+        "sand dunes chill music"
       ],
-      "concept": "Atmospheric instrumental beats subtly mixed with nature sounds, paired with stunning natural landscape visuals."
+      "concept": "A fusion of chilled lofi beats and immersive desert ambience—soft winds over dunes, distant coyote howls, and warm sunset hues creating a mirage-like dreamscape."
     }
   ],
   "implementation_strategy": {
