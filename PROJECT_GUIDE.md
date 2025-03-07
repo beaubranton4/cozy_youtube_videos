@@ -67,20 +67,43 @@ cozy_youtube_videos/
 
 ### Available Channel Concepts
 
-We've defined 12 YouTube channel concepts, each pairing a specific music genre with a complementary vibe:
+We've defined 12 YouTube channel concepts, each with a unique music genre and visual vibe:
 
-1. **Vintage Cabin Retreats** - Vintage Oldies + Cabin Comforts
-2. **Tranquil Corner Jazz** - Tender Piano Jazz + Perfect Relaxing Corner
-3. **Atmospheric Radio Archives** - Vintage Radio Broadcasts + ASMR Radio Experience
-4. **Seasonal Lofi Rhythms** - Lofi Hip Hop + Monthly Seasonal Changes
-5. **Deep Focus Garage** - Future Garage + Focus Enhancing
-6. **Whispered Beats Studio** - Atmospheric Beats + ASMR Lofi
-7. **Melodic Trap Sanctuaries** - Melodic Trap/Drill + Urban Relaxation Spaces
-8. **Accent Jazz Journeys** - International Jazz Variations + ASMR Accent Experiences
-9. **Winter Oldies Hearth** - Winter-themed Oldies + Cozy Fireplace Settings
-10. **Culinary Lofi Bakery** - Gentle Lofi + ASMR Culinary Experiences
-11. **Tender Night Melodies** - Tender Piano Jazz + Night-time Relaxation
-12. **Atmospheric Nature Beats** - Atmospheric Beats + Natural Landscapes
+1. **Cozy Cabin Oldies** (@vintagecabinradio) - Vintage Oldies + Cabin Comforts
+   - Classic oldies music playing softly as if from another room in a cozy cabin setting with crackling fireplace visuals.
+
+2. **Jewelry Store Jazz** (@jewelrystorejazz) - Tender Piano Jazz + Elegant & Luxurious Ambiance
+   - Smooth and elegant piano jazz playing in the background of a high-end jewelry store, creating a refined and luxurious ambiance with soft lighting and sparkling displays.
+
+3. **Retro Radio Archives** (@midnightradiovibes) - Vintage Radio Broadcasts + ASMR Radio Experience
+   - Recreated vintage radio broadcasts with gentle static and ASMR-quality announcer voices between music tracks.
+
+4. **Seasonal Lofi Rhythms** (@lofiseasons) - Lofi Hip Hop + Monthly Seasonal Changes
+   - Lofi beats that capture the essence of each month's unique atmosphere, paired with seasonal visuals.
+
+5. **Deep Future Garage** (@neonmindtapes) - Future Garage + Immersive Soundscapes for Focus
+   - Immersive Future Garage music with deep bass, atmospheric textures, and subtle binaural beats designed for focus and deep work.
+
+6. **Midnight Auto Beats** (@midnightautowaves) - Future Garage x Industrial Ambient + Late Night Mechanic Shop
+   - Future garage and ambient electronic music blended with the immersive sounds of a late-night mechanic shop—clinking tools, distant chatter, and low hums of engines.
+
+7. **Camp Fire Radio** (@mistyforestcamp) - ASMR x Nature x Vintage Radio + Campfire in a Foggy Forest
+   - Soft-spoken vintage radio broadcasts layered with nature sounds—crackling campfires, distant owls, and the occasional rain—all set in a misty forest campsite.
+
+8. **Anime Jazz Club** (@animejazzclub) - Smooth Jazz x Anime Soundtracks + Retro Anime Lounge
+   - A blend of smooth jazz and iconic anime soundtrack pieces, paired with vintage anime-style visuals of cozy city cafés and rain-drenched streets.
+
+9. **Ethereal Space Beats** (@etherealspacebeats) - Atmospheric Space Beats + Cinematic Cosmic Exploration
+   - A blend of cinematic ambient beats and cosmic synthwave, creating a sense of deep-space exploration and interstellar mystery.
+
+10. **Culinary Lofi Bakery** (@lofibakery) - Gentle Lofi + ASMR Culinary Experiences
+    - Soft lofi beats paired with visuals of bakeries, bread-making, and other culinary processes.
+
+11. **Grand Library Archives** (@grandlibraryradio) - Vintage Radio x Classical Jazz + Historic Library Ambiance
+    - A mix of vintage radio broadcasts and classical jazz tunes, set in an old, candle-lit library where history and music intertwine.
+
+12. **Desert Lofi Mirage** (@desertlofimirage) - Lofi x Desert Ambience + Vast Open Desert Soundscapes
+    - A fusion of chilled lofi beats and immersive desert ambience—soft winds over dunes, distant coyote howls, and warm sunset hues creating a mirage-like dreamscape.
 
 ### Channel Manager Script
 
@@ -260,7 +283,7 @@ The `create_final_lofi.sh` script combines music and video into a final video. I
 Example:
 ```bash
 cd scripts/video
-./create_final_lofi.sh 180 ../../channels/Vintage_Cabin_Retreats/music ../../channels/Vintage_Cabin_Retreats/videos ../../channels/Vintage_Cabin_Retreats/final/final_3hour_vintage_cabin.mp4
+./create_final_lofi.sh 180 ../../channels/Cozy_Cabin_Oldies/music ../../channels/Cozy_Cabin_Oldies/videos ../../channels/Cozy_Cabin_Oldies/final/final_3hour_cozy_cabin.mp4
 ```
 
 ### Video Customization
@@ -279,6 +302,7 @@ The metadata generator script generates metadata for YouTube, including:
 - Title suggestions
 - Description template
 - Tags
+- YouTube handle for the channel
 
 You can find this metadata in the channel's metadata directory:
 ```
