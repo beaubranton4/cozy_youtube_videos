@@ -54,20 +54,20 @@ cozy_youtube_videos/
 
 ## Available Channel Concepts
 
-We've defined 12 YouTube channel concepts, each pairing a specific music genre with a complementary vibe:
+We've defined 12 YouTube channel concepts, each with a unique music genre and visual vibe:
 
-1. **Vintage Cabin Retreats** - Vintage Oldies + Cabin Comforts
-2. **Tranquil Corner Jazz** - Tender Piano Jazz + Perfect Relaxing Corner
-3. **Atmospheric Radio Archives** - Vintage Radio Broadcasts + ASMR Radio Experience
-4. **Seasonal Lofi Rhythms** - Lofi Hip Hop + Monthly Seasonal Changes
-5. **Deep Focus Garage** - Future Garage + Focus Enhancing
-6. **Whispered Beats Studio** - Atmospheric Beats + ASMR Lofi
-7. **Melodic Trap Sanctuaries** - Melodic Trap/Drill + Urban Relaxation Spaces
-8. **Accent Jazz Journeys** - International Jazz Variations + ASMR Accent Experiences
-9. **Winter Oldies Hearth** - Winter-themed Oldies + Cozy Fireplace Settings
-10. **Culinary Lofi Bakery** - Gentle Lofi + ASMR Culinary Experiences
-11. **Tender Night Melodies** - Tender Piano Jazz + Night-time Relaxation
-12. **Atmospheric Nature Beats** - Atmospheric Beats + Natural Landscapes
+1. **Cozy Cabin Oldies** (@vintagecabinradio) - Vintage Oldies + Cabin Comforts
+2. **Jewelry Store Jazz** (@jewelrystorejazz) - Tender Piano Jazz + Elegant & Luxurious Ambiance
+3. **Retro Radio Archives** (@midnightradiovibes) - Vintage Radio Broadcasts + ASMR Radio Experience
+4. **Seasonal Lofi Rhythms** (@lofiseasons) - Lofi Hip Hop + Monthly Seasonal Changes
+5. **Deep Future Garage** (@neonmindtapes) - Future Garage + Immersive Soundscapes for Focus
+6. **Midnight Auto Beats** (@midnightautowaves) - Future Garage x Industrial Ambient + Late Night Mechanic Shop
+7. **Camp Fire Radio** (@mistyforestcamp) - ASMR x Nature x Vintage Radio + Campfire in a Foggy Forest
+8. **Anime Jazz Club** (@animejazzclub) - Smooth Jazz x Anime Soundtracks + Retro Anime Lounge
+9. **Ethereal Space Beats** (@etherealspacebeats) - Atmospheric Space Beats + Cinematic Cosmic Exploration
+10. **Culinary Lofi Bakery** (@lofibakery) - Gentle Lofi + ASMR Culinary Experiences
+11. **Grand Library Archives** (@grandlibraryradio) - Vintage Radio x Classical Jazz + Historic Library Ambiance
+12. **Desert Lofi Mirage** (@desertlofimirage) - Lofi x Desert Ambience + Vast Open Desert Soundscapes
 
 ## For More Information
 
