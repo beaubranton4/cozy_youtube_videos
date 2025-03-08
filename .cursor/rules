@@ -1,0 +1,84 @@
+ # Cursor Rules for Cozy YouTube Videos Project
+
+## Project Goals
+- Automate the creation of youtube videos for multiple YouTube channels (ai generated music and video)
+- Maintain consistent quality across different channel concepts
+- Streamline the workflow from raw content to final video production
+- Generate appropriate metadata for YouTube publishing
+
+## Code Style & Organization
+- Follow PEP 8 style guidelines for Python code
+- Use 4 spaces for indentation (not tabs)
+- Maximum line length of 100 characters
+- Include comprehensive docstrings for all functions and classes
+- Use snake_case for functions and variables
+- Use CamelCase for classes
+- Use UPPER_CASE for constants
+- Write code in as few lines as possible
+
+## Project Structure Rules
+- Keep the modular six-step workflow intact:
+  1. Music Management
+  2. Music Production
+  3. Video Management
+  4. Video Production Prep
+  5. Final Video Production
+  6. Metadata Generation
+- Maintain separation between raw and production files
+- Respect the channel concept structure defined in channel_concepts.json
+- Place utility functions in scripts/utils/
+- Place generation scripts in scripts/generation/
+- Place video processing scripts in scripts/video/
+
+## Channel Management
+- Always validate channel IDs before processing
+- Include YouTube handles in all channel-related outputs
+- Preserve the raw/production directory structure
+- Handle month placeholders consistently ([Month], [Current Month], [Insert Current Month])
+- Generate appropriate metadata for each channel based on its concept
+
+## File Operations
+- Add appropriate error handling for file operations
+- Validate file existence before processing
+- Check file formats and properties (duration, bitrate, resolution)
+- Use descriptive naming conventions for generated files
+- Include timestamps in log files and metadata
+
+## Command-line Interface
+- Maintain consistent command-line argument patterns across scripts
+- Provide helpful error messages for invalid inputs
+- Include --help documentation for all scripts
+- Support batch processing where appropriate
+
+## Media Processing
+- Ensure compatibility with common media formats (MP3, MP4, etc.)
+- Validate media quality before processing (bitrate, resolution)
+- Handle long-running processes with appropriate progress indicators
+- Implement proper cleanup of temporary files
+- Support exclusion of specific tracks when needed
+
+## YouTube Integration
+- Include YouTube handles in metadata
+- Generate SEO-friendly titles, descriptions, and tags
+- Follow YouTube's best practices for metadata
+- Support scheduling of uploads
+- Generate appropriate thumbnails
+
+## Performance Considerations
+- Be mindful of memory usage when processing large media files
+- Implement efficient algorithms for file concatenation
+- Consider parallel processing for batch operations
+- Cache results where appropriate to avoid redundant processing
+
+## Documentation
+- Keep README.md and PROJECT_GUIDE.md in sync with code changes
+- Document new features and workflows
+- Include examples for common use cases
+- Provide troubleshooting guidance for common issues
+
+## Testing
+- Test scripts with various channel concepts
+- Validate outputs for different durations
+- Check compatibility with different media formats
+- Test error handling with invalid inputs
+- Verify metadata generation for different channels

@@ -1,0 +1,16 @@
+venv311/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+channels/*
+*.mp3
+*.db

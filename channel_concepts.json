@@ -1,0 +1,169 @@
+{
+  "channels": [
+    {
+      "id": 1,
+      "name": "Cozy_Cabin_Oldies",
+      "youtube_handle": "@vintagecabinradio",
+      "music_genre": "Vintage Oldies",
+      "vibe": "Cabin Comforts",
+      "target_keywords": [
+        "vintage winter oldies playing in another room",
+        "cozy oldies",
+        "cabin comforts 1 hour no ads"
+      ],
+      "concept": "Classic oldies music playing softly as if from another room in a cozy cabin setting with crackling fireplace visuals."
+    },
+    {
+      "id": 2,
+      "name": "Jewelry_Store_Jazz",
+      "youtube_handle": "@jewelrystorejazz",
+      "music_genre": "Tender Piano Jazz",
+      "vibe": "Elegant & Luxurious Ambiance",
+      "target_keywords": [
+        "tranquil jazz melodies",
+        "tender piano jazz",
+        "perfect relaxing corner 4 hours"
+      ],
+      "concept": "Smooth and elegant piano jazz playing in the background of a high-end jewelry store, creating a refined and luxurious ambiance with soft lighting and sparkling displays."
+    },
+    {
+      "id": 3,
+      "name": "Retro_Radio_Archives",
+      "youtube_handle": "@midnightradiovibes",
+      "music_genre": "Vintage Radio Broadcasts",
+      "vibe": "ASMR Radio Experience",
+      "target_keywords": [
+        "vintage radio",
+        "asmr radio announcer roleplay",
+        "asmr radio broadcast 5 hours"
+      ],
+      "concept": "Recreated vintage radio broadcasts with gentle static and ASMR-quality announcer voices between music tracks."
+    },
+    {
+      "id": 4,
+      "name": "Seasonal_Lofi_Rhythms",
+      "youtube_handle": "@lofiseasons",
+      "music_genre": "Lofi Hip Hop",
+      "vibe": "Monthly Seasonal Changes",
+      "target_keywords": [
+        "[Insert Current Month] Vibes",
+        "[Current Month] Playlist",
+        "seasonal lofi 10 hours no ads"
+      ],
+      "concept": "Lofi beats that capture the essence of each month's unique atmosphere, paired with seasonal visuals."
+    },
+    {
+      "id": 5,
+      "name": "Deep_Future_Garage",
+      "youtube_handle": "@neonmindtapes",
+      "music_genre": "Future Garage",
+      "vibe": "Immersive Soundscapes for Focus",
+      "target_keywords": [
+        "deep future garage",
+        "concentration beats 30Hz",
+        "focus music futuristic vibes",
+        "trap beats"
+      ],
+      "concept": "Immersive Future Garage music with deep bass, atmospheric textures, and subtle binaural beats designed for focus and deep work."
+    },
+    {
+      "id": 6,
+      "name": "Midnight_Auto_Beats",
+      "youtube_handle": "@midnightautowaves",
+      "music_genre": "Future Garage x Industrial Ambient",
+      "vibe": "Late Night Mechanic Shop",
+      "target_keywords": [
+        "future garage night drive",
+        "mechanic shop lofi",
+        "dark ambient garage beats"
+      ],
+      "concept": "Future garage and ambient electronic music blended with the immersive sounds of a late-night mechanic shop—clinking tools, distant chatter, and low hums of engines."
+    },
+    {
+      "id": 7,
+      "name": "Camp_Fire_Radio",
+      "youtube_handle": "@mistyforestcamp",
+      "music_genre": "ASMR x Nature x Vintage Radio",
+      "vibe": "Campfire in a Foggy Forest",
+      "target_keywords": [
+        "campfire radio ASMR",
+        "forest camping sounds",
+        "cozy foggy woods retreat"
+      ],
+      "concept": "Soft-spoken vintage radio broadcasts layered with nature sounds—crackling campfires, distant owls, and the occasional rain—all set in a misty forest campsite."
+    },
+    {
+      "id": 8,
+      "name": "Anime_Jazz_Club",
+      "youtube_handle": "@animejazzclub",
+      "music_genre": "Smooth Jazz x Anime Soundtracks",
+      "vibe": "Retro Anime Lounge",
+      "target_keywords": [
+        "anime jazz playlist",
+        "lofi anime jazz",
+        "90s anime jazz vibes"
+      ],
+      "concept": "A blend of smooth jazz and iconic anime soundtrack pieces, paired with vintage anime-style visuals of cozy city cafés and rain-drenched streets."
+    },
+    {
+      "id": 9,
+      "name": "Ethereal_Space_Beats",
+      "youtube_handle": "@etherealspacebeats",
+      "music_genre": "Atmospheric Space Beats",
+      "vibe": "Cinematic Cosmic Exploration",
+      "target_keywords": [
+        "space ambient music",
+        "ethereal cosmic beats",
+        "chill sci-fi synthwave"
+      ],
+      "concept": "A blend of cinematic ambient beats and cosmic synthwave, creating a sense of deep-space exploration and interstellar mystery."
+    },
+    {
+      "id": 10,
+      "name": "Culinary_Lofi_Bakery",
+      "youtube_handle": "@lofibakery",
+      "music_genre": "Gentle Lofi",
+      "vibe": "ASMR Culinary Experiences",
+      "target_keywords": [
+        "trying asian fruit bread asmr",
+        "bakery lofi",
+        "culinary asmr"
+      ],
+      "concept": "Soft lofi beats paired with visuals of bakeries, bread-making, and other culinary processes."
+    },
+    {
+      "id": 11,
+      "name": "Grand_Library_Archives",
+      "youtube_handle": "@grandlibraryradio",
+      "music_genre": "Vintage Radio x Classical Jazz",
+      "vibe": "Historic Library Ambiance",
+      "target_keywords": [
+        "vintage radio jazz",
+        "cozy library ambiance",
+        "old archives music"
+      ],
+      "concept": "A mix of vintage radio broadcasts and classical jazz tunes, set in an old, candle-lit library where history and music intertwine."
+    },
+    {
+      "id": 12,
+      "name": "Desert_Lofi_Mirage",
+      "youtube_handle": "@desertlofimirage",
+      "music_genre": "Lofi x Desert Ambience",
+      "vibe": "Vast Open Desert Soundscapes",
+      "target_keywords": [
+        "desert lofi beats",
+        "lofi mirage music",
+        "autonomous sensory meridian response",
+        "sand dunes chill music"
+      ],
+      "concept": "A fusion of chilled lofi beats and immersive desert ambience—soft winds over dunes, distant coyote howls, and warm sunset hues creating a mirage-like dreamscape."
+    }
+  ],
+  "implementation_strategy": {
+    "visual_identity": "Create consistent color schemes and visual styles for all videos within a channel",
+    "music_template": "Establish a signature sound that defines your channel while still allowing variety",
+    "title_duration": "Include specific durations in titles (1 hour, 4 hours, 10 hours)",
+    "longer_videos": "Add 'no ads' in longer video titles as a high-value search term",
+    "playlists": "Create playlists that group similar vibes within your channel niche"
+  }
+}
