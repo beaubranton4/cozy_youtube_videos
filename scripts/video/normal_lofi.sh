@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Script to create a normal lofi video with ping-pong looping and audio crossfades
+# Script to create a normal lofi video with seamless ping-pong looping and audio crossfades
 # This script stitches all audio files together with crossfades, then loops the combined audio with a slowed video
 
 # Default values
-DURATION_MINUTES=240
-CHANNEL_NAME="Midnight Auto Beats"
+DURATION_MINUTES=180
+CHANNEL_NAME="Seasonal Lofi Rhythms"
 SLOWDOWN_FACTOR=2.0
-RANDOMIZE_MUSIC=false
+RANDOMIZE_MUSIC=true
 CROSSFADE_DURATION=3  # Crossfade duration in seconds
 
 # Convert channel name to directory format (replace spaces with underscores)
@@ -23,8 +23,8 @@ VIDEO_DIR="${CHANNEL_DIR}/videos/raw"
 OUTPUT_DIR="${CHANNEL_DIR}/final"
 OUTPUT_FILE="${OUTPUT_DIR}/${CHANNEL_DIR_NAME}_${DURATION_MINUTES}min_${SLOWDOWN_FACTOR}x_${TIMESTAMP}.mp4"
 
-# Calculate target duration in seconds
-TARGET_DURATION=$((DURATION_MINUTES * 60))
+# Calculate target duration in seconds (using bc for floating point math)
+TARGET_DURATION=$(echo "$DURATION_MINUTES * 60" | bc | cut -d. -f1)
 
 # Create output directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
@@ -51,7 +51,7 @@ MP3_FILES=()
 while IFS= read -r file; do
     MP3_FILES+=("$file")
     echo "Found: $file"
-done < <(find "$MUSIC_DIR" -name "*.mp3" | sort)
+done < <(find "$MUSIC_DIR" -maxdepth 1 -name "*.mp3" | sort)
 
 if [ ${#MP3_FILES[@]} -eq 0 ]; then
     echo "Error: No MP3 files found in $MUSIC_DIR"
@@ -163,7 +163,7 @@ cat "$LOOP_LIST"
 
 # Step 6: Create the extended audio by concatenating the loops
 echo "Step 6: Creating extended audio by concatenating loops..."
-ffmpeg -f concat -safe 0 -i "$LOOP_LIST" -c:a libmp3lame -b:a 192k -t $TARGET_DURATION "$TEMP_DIR/extended_audio.mp3" -y
+ffmpeg -f concat -safe 0 -i "$LOOP_LIST" -c:a libmp3lame -b:a 192k -t "$TARGET_DURATION" "$TEMP_DIR/extended_audio.mp3" -y
 
 # Step 7: Find the video file directly in the raw folder (not in subdirectories)
 echo "Step 7: Finding video file..."
@@ -186,13 +186,29 @@ fi
 VIDEO_FILE="${VIDEO_FILES[0]}"
 echo "Selected video: $VIDEO_FILE"
 
-# Step 8: Slow down the video
+# Step 8: Slow down the video and extract frames
 echo "Step 8: Slowing down the video (${SLOWDOWN_FACTOR}x slower)..."
-ffmpeg -i "$VIDEO_FILE" -filter:v "setpts=${SLOWDOWN_FACTOR}*PTS" -c:v libx264 -crf 18 -preset slow "$TEMP_DIR/slowed_video.mp4" -y
 
-# Step 9: Create a reversed version of the slowed video
+# Get the frame rate of the original video
+ORIGINAL_FPS=$(ffprobe -v error -select_streams v -of default=noprint_wrappers=1:nokey=1 -show_entries stream=r_frame_rate "$VIDEO_FILE")
+# Convert fraction to decimal if needed
+if [[ $ORIGINAL_FPS == *"/"* ]]; then
+    NUMERATOR=$(echo $ORIGINAL_FPS | cut -d'/' -f1)
+    DENOMINATOR=$(echo $ORIGINAL_FPS | cut -d'/' -f2)
+    ORIGINAL_FPS=$(echo "scale=2; $NUMERATOR / $DENOMINATOR" | bc)
+fi
+echo "Original video frame rate: $ORIGINAL_FPS fps"
+
+# Calculate the new frame rate
+NEW_FPS=$(echo "scale=2; $ORIGINAL_FPS / $SLOWDOWN_FACTOR" | bc)
+echo "New video frame rate: $NEW_FPS fps"
+
+# Slow down the video by adjusting the frame rate
+ffmpeg -i "$VIDEO_FILE" -vf "setpts=${SLOWDOWN_FACTOR}*PTS" -r $NEW_FPS -c:v libx264 -crf 18 -preset slow "$TEMP_DIR/slowed_video.mp4" -y
+
+# Step 9: Create a reversed version of the slowed video with the same frame rate
 echo "Step 9: Creating reversed version of the video..."
-ffmpeg -i "$TEMP_DIR/slowed_video.mp4" -vf reverse -c:v libx264 -crf 18 -preset slow "$TEMP_DIR/reversed_video.mp4" -y
+ffmpeg -i "$TEMP_DIR/slowed_video.mp4" -vf "reverse" -r $NEW_FPS -c:v libx264 -crf 18 -preset slow "$TEMP_DIR/reversed_video.mp4" -y
 
 # Step 10: Create a concat file for the ping-pong loop
 echo "Step 10: Creating ping-pong loop..."
@@ -207,12 +223,31 @@ echo "file '$PWD/$TEMP_DIR/reversed_video.mp4'" >> "$PINGPONG_LIST"
 echo "Pingpong list file content:"
 cat "$PINGPONG_LIST"
 
-# Create a single ping-pong cycle
-ffmpeg -f concat -safe 0 -i "$PINGPONG_LIST" -c copy "$TEMP_DIR/pingpong_cycle.mp4" -y
+# Create a single ping-pong cycle with consistent frame rate
+echo "Creating ping-pong cycle with consistent frame rate..."
+ffmpeg -f concat -safe 0 -i "$PINGPONG_LIST" -c:v libx264 -crf 18 -preset slow -r $NEW_FPS "$TEMP_DIR/pingpong_cycle.mp4" -y
 
 # Step 11: Create the extended video by looping the ping-pong cycle
 echo "Step 11: Creating extended video by looping the ping-pong cycle..."
-ffmpeg -stream_loop -1 -i "$TEMP_DIR/pingpong_cycle.mp4" -c copy -t $TARGET_DURATION "$TEMP_DIR/extended_video.mp4" -y
+
+# Get the duration of the ping-pong cycle
+CYCLE_DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$TEMP_DIR/pingpong_cycle.mp4")
+echo "Ping-pong cycle duration: $CYCLE_DURATION seconds"
+
+# Calculate how many times we need to loop the video
+VIDEO_LOOP_COUNT=$(echo "scale=0; $TARGET_DURATION / $CYCLE_DURATION + 1" | bc)
+echo "Will loop video $VIDEO_LOOP_COUNT times to reach target duration"
+
+# Create a file with the video repeated
+VIDEO_LOOP_LIST="$TEMP_DIR/video_loop.txt"
+rm -f "$VIDEO_LOOP_LIST"
+
+for i in $(seq 1 $VIDEO_LOOP_COUNT); do
+    echo "file '$PWD/$TEMP_DIR/pingpong_cycle.mp4'" >> "$VIDEO_LOOP_LIST"
+done
+
+# Create the extended video by concatenating the loops with consistent frame rate
+ffmpeg -f concat -safe 0 -i "$VIDEO_LOOP_LIST" -c:v libx264 -crf 18 -preset slow -r $NEW_FPS "$TEMP_DIR/extended_video.mp4" -y
 
 # Step 12: Combine extended video with extended audio
 echo "Step 12: Combining video and audio..."
